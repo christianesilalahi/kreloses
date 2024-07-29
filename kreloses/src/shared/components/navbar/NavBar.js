@@ -3,10 +3,12 @@ import './NavBar.css';
 
 export const NavBar = ({toggleSidebar}) =>  {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" 
+        className="navbar"
+       style={{backgroundSize: "0", backgroundColor: "#4169e1"}}>
       <Container>
         <Button onClick={toggleSidebar}>☰</Button>
-        <Navbar.Brand href="#home">KRELOSES</Navbar.Brand>
+        <Navbar.Brand href="#home" style={{color: "white"}}>KRELOSES</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

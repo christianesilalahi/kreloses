@@ -4,6 +4,7 @@ import { NavBar } from './shared/components/navbar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { SideBar } from './shared/components/sidebar/SideBar';
 import { useState } from 'react';
+import { TabBar } from './shared/components/tabbar/TabBar';
 
 function App() {
 
@@ -33,7 +34,12 @@ function App() {
       </header> */}
       <NavBar toggleSidebar={toggleSidebar}/>
       <div style={{ display: 'flex', position: 'relative' }}>
-      <SideBar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
+      <SideBar sidebarOpen={sidebarOpen}  body={<>
+        <TabBar/>
+          <main style={{ padding: '20px' }}>
+            <h2> lalalala</h2>
+          </main>
+      </>} />
       <div style={{ flex: 1, marginLeft: sidebarOpen ? '250px' : '0', transition: 'margin-left 0.3s' }}>
           <main style={{ padding: '20px' }}>
             <h2> lalalala</h2>

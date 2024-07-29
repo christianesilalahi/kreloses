@@ -29,9 +29,24 @@
     width: 100%;
   }
   */
+  
+  .bg-body-tertiary {
+    position: relative; /* Ensure proper stacking context */
+    z-index: 2; /* Navbar is above the sidebar */
+    background-color: #4169e1; /* Set the background color */
+  }
+
+  .navbar {
+    position: relative;
+    z-index: 2;
+  }
+
+  /* .navbar-header {
+    background-color: #F16E10;
+  } */
 
   .nav-link-custom {
-    color: inherit;
+    color: rgba(225, 225, 225, 0.767) !important;
     text-decoration: none;
     position: relative;
     padding-bottom: 4px; /* Adjust based on your design */
@@ -43,11 +58,11 @@
   
   .nav-link-custom:hover,
   .nav-link-custom:focus {
-    color: blue !important;
+    color: white !important;
   }
   
   .nav-link-custom.active {
-    color: blue !important;
+    color: white    !important;
   }
   
   .nav-link-custom::after {
@@ -64,4 +79,3 @@
   .nav-link-custom.active::after {
     width: 100%;
   }
-  

@@ -1,6 +1,6 @@
 import "./SideBar.css"
 
-export const SideBar = ({ sidebarOpen, toggleSidebar}) => {
+export const SideBar = ({ sidebarOpen, body }) => {
     return(
         <div>
             <div className={`sidebar ${sidebarOpen ? 'openSidebar' : ''}`}>
@@ -13,9 +13,10 @@ export const SideBar = ({ sidebarOpen, toggleSidebar}) => {
 
         <div style={{ marginLeft: sidebarOpen ? '250px' : '0', transition: 'margin-left 0.3s' }}>
             {/* Your main content goes here */}
+            {body}
             <h2>Welcome to the Dashboard</h2>
             <p>Content of the page...</p>
             </div>
-            </div>
+        </div>
     );
 }

@@ -4,8 +4,8 @@ import './NavBar.css';
 export const NavBar = ({toggleSidebar}) =>  {
   return (
     <Navbar expand="lg" 
-        className="navbar"
-       style={{backgroundSize: "0", backgroundColor: "#4169e1"}}>
+        className="navbar navbar-custom"
+       style={{backgroundSize: "0", paddingBottom: "-12"}}>
       <Container>
         <Button onClick={toggleSidebar}>☰</Button>
         <Navbar.Brand href="#home" style={{color: "white"}}>KRELOSES</Navbar.Brand>
@@ -27,7 +27,6 @@ export const NavBar = ({toggleSidebar}) =>  {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <h1>Testttt</h1>
       </Container>
     </Navbar>
   );

@@ -41,15 +41,16 @@
     z-index: 2;
   }
 
-  /* .navbar-header {
-    background-color: #F16E10;
-  } */
+  .navbar-custom {
+    background-color: #4169e1;
+}
 
   .nav-link-custom {
     color: rgba(225, 225, 225, 0.767) !important;
     text-decoration: none;
     position: relative;
-    padding-bottom: 4px; /* Adjust based on your design */
+    padding-bottom: 4px; 
+    /* Adjust based on your design */
     transition: color 0.3s ease-in-out;
 
     z-index: 2; /* Ensure navbar is above the sidebar */
@@ -63,6 +64,7 @@
   
   .nav-link-custom.active {
     color: white    !important;
+    font-weight: bolder;
   }
   
   .nav-link-custom::after {
@@ -72,7 +74,8 @@
     bottom: 0;
     width: 0;
     height: 2px;
-    background-color: blue;
+
+    /* background-color: blue; */
     transition: width 0.3s ease-in-out;
   }
   
